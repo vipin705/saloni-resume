@@ -81,9 +81,10 @@ body {
 
 .hero {
   max-width: 130rem;
-  height: 70vh;
+  /* height: 70vh; */
   margin: 0 auto;
   padding: 0 3.2rem;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -127,7 +128,8 @@ body {
 }
 
 .social-media {
-  margin-top: 9.6rem;
+  position: absolute;
+  bottom: 0;
   display: flex;
   gap: 3.2rem;
 }
@@ -157,6 +159,7 @@ body {
   align-items: center;
   height: 6.2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
   color: #213276;
@@ -176,6 +179,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links:link,
@@ -202,9 +206,11 @@ body {
 .background {
   margin: 0 auto;
   max-width: 120rem;
+  padding: 0 3.2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 80rem 1fr;
   align-items: center;
+  justify-content: center;
   gap: 9.6rem;
 }
 
@@ -231,11 +237,16 @@ h3 {
 
 .section-images {
   background-color: #fff;
-  padding: 0rem 0 9.9rem 0;
+  padding: 0rem 0 4.6rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin: 0 auto;
 }
 
 .my-images {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 130rem;
   margin: 0 auto;
   padding: 4.8rem 0;
   height: 40rem;
@@ -244,24 +255,38 @@ h3 {
   gap: 2.4rem;
 }
 
-.my-image {
+/* .my-image {
+  border-radius: 4.8rem;
+  width: 100%;
+  height: 45rem;
+} */
+
+.my-image img {
+  border-radius: 4.8rem;
+  width: 100%;
+  height: 45rem;
+}
+
+/* .my-image {
   border-radius: 4.8rem;
   width: 65rem;
   height: 45rem;
   background-image: url(saloni-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+  background-position: center;
+} */
 
 .section-work-edu {
   background-color: #eceffd;
   padding: 0rem 0 9.9rem 0;
-  margin-top: 9.6rem;
+  margin-top: 4.8rem;
 }
 
 .work-edu {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   padding-top: 4.8rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -284,7 +309,7 @@ h3 {
 .we-title {
   font-size: 2rem;
   font-weight: 400 lighter;
-  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
 }
 
 .exp-list,
@@ -296,7 +321,7 @@ h3 {
 .duration {
   font-size: 1.6rem;
   font-weight: 300;
-  padding-top: 0.5rem;
+  padding: 0.5rem;
 }
 
 .we-details {
